@@ -1,0 +1,21 @@
+#recRange----
+
+package com.ds.alg;
+
+public class recRange {
+	public static void main(String[] args) {
+		 recRange p = new  recRange();
+		int i = p.recursiveRange(3) ;
+		System.out.println(i);
+
+	}
+
+	public int recursiveRange(int num) 
+    { 
+        if (num <= 0) { 
+            return 0; }
+        return ( num + recursiveRange(num-1)); 
+    } 
+
+}
+
